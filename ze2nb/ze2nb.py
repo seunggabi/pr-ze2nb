@@ -5,6 +5,8 @@ import json
 import html
 import nbformat
 import codecs
+import sys
+
 from io import StringIO
 import io
 
@@ -271,3 +273,6 @@ def ze2nb(file_name, load_path=None, out_path=None, to_nb=True, to_html=True, to
     if to_nb is False:
         os.system('rm %s'%(name+'.ipynb'))
 
+if __name__ == "__main__":
+    filename = sys.argv[1]
+    ze2nb(filename)
