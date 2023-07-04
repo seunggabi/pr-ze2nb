@@ -135,4 +135,4 @@ target/
 # exclude sensitive files from repo
 etc/keys/*.asc
 
-
+.venv
